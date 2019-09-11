@@ -25,7 +25,10 @@ public class Patient {
         {
             allergies=e;
         }
-        public String getname(){return name;}
+        public String getname()
+        {
+            return name;
+        }
         public char getsex(){return sex;}
         public int getage(){return age;}
         public float getweight(){return weight;}

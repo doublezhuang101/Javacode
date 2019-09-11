@@ -16,8 +16,6 @@ public class Rectangle {
         double length1=getLength();
         double width1=getWidth();
         tmp=length1*width1;
-        System.out.println("面积为"+tmp);
+        System.out.println("矩形的面积为"+tmp);
     }
-
-
 }
