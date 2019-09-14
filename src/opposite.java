@@ -10,6 +10,7 @@ public class opposite {
         {
             int tmp = r.nextInt(100);
             //System.out.println(tmp);
+//changes
             array[i]=tmp;
             System.out.println(array[i]);
         }
