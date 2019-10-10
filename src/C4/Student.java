@@ -6,6 +6,11 @@ class StudentXW extends Student{
         int temp=getEnglish_score()+getMath_score()+getPC_score();
         System.out.println("学委测评成绩为："+((temp/3)+3));
     }
+    public StudentXW(int x,int y,int z){
+        setEnglish_score(x);
+        setMath_score(y);
+        setPC_score(z);
+    }
 }
 class StudentBZ extends Student{
     public int zeren1;
@@ -91,7 +96,7 @@ public class Student {
     }
     public void testScore(Student a){
         int tmp=getEnglish_score()+getPC_score()+getMath_score();
-        System.out.println("测评成绩为："+(tmp/3));
+        System.out.println("学生测评成绩为："+(tmp/3));
     }
     public Student(int x,int y,int z)
     {
@@ -100,4 +105,14 @@ public class Student {
         setPC_score(z);
     }
     public Student(){}
+}
+class Test{
+    public static void main(String[] args) {
+        Student S1=new Student(20,30,40);
+        StudentXW S2=new StudentXW(60,70,80);
+        StudentBZ S3=new StudentBZ(70,85,95);
+        S1.testScore(S1);
+        S2.testScore(S2);
+        S3.testScore(S3);
+    }
 }

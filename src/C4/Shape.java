@@ -18,5 +18,4 @@ public abstract class Shape {
         Rect d = new Rect ();
         System.out.println("长方形面积:" + d.area(8, 9));
     }
-
 }
