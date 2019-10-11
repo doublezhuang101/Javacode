@@ -1,3 +1,5 @@
+package opposite;
+
 import java.util.Random;
 
 public class opposite {
